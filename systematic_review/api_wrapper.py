@@ -21,7 +21,7 @@ with open("es-api-key.txt", "r") as file:
     api_key = file.readlines()[0]
 
 
-def search_scopus(query, view="STANDARD", index=0, key=api_key):
+def search_scopus(query, return_type='dataframe', view="STANDARD", index=0, key=api_key):
     '''
         Search Scopus database using key as api key, with query.
 
@@ -52,12 +52,18 @@ def search_scopus(query, view="STANDARD", index=0, key=api_key):
     results = r.json()
 
     total_count = int(results['search-results']['opensearch:totalResults'])
+    if index==0:
+        print(f"Total number of entries: {total_count}")
+        
+    if return_type.lower() == 'dataframe':
+        entries = results['search-results']['entry']
 
-    entries = results['search-results']['entry']
+        result_df = pd.DataFrame([parse_article(entry) for entry in entries])
 
-    result_df = pd.DataFrame([parse_article(entry) for entry in entries])
-
-    return result_df
+        return result_df
+    
+    elif return_type.lower() == 'json':
+        return results
 
 
 def parse_article(entry):
