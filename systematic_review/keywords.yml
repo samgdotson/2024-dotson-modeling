@@ -1,0 +1,104 @@
+Include:
+  Energy modelling:
+    - Energy PRE/2 system*
+    - Energy model*
+    - Energy system optimization
+    - Multi*objective
+  Energy justice:
+    - justice
+    - equity
+  Aspects of Justice:
+    - Procedural
+    - Distribut*
+    - Recognition
+    - Cosmpolitan
+  Location:
+    - Municipal*
+    - Local*
+    - Community
+    - City
+  Planning processes:
+    - Planning
+    - vision*
+    - goal*
+    - Decision*making
+    - Participat*
+    - Deliberat*
+    - Democra*
+    - Transpar*
+  Model development:
+    - Co*creat*
+    - Open*source
+    - Model development
+    - Code development
+
+Exclude:
+  - building
+  - machine*learning
+  - artificial intelligence
+  - AI
+  - Game theor*
+  - Integrated assessment model
+  - Agri*
+  - Transport*
+
+incl_subjects:
+  - COMP
+  - EART
+  - ENER
+  - ENGI
+  - ENVI
+  - MATH
+  - DECI
+  - ECON
+  - SOCI
+
+excl_subjects:
+  - HEAL
+  - DENT
+  - MEDI
+  - MULT
+  - NURS
+  - VETE
+  - AGRI
+  - BIOC
+  - IMMU
+  - NEUR
+  - PHAR
+  - BUSI
+  - CHEM
+  - CENG
+  - PSYC
+
+
+all_subjects:
+  - Health Professions (HEAL)
+  - Dentistry (DENT)
+  - Medicine (MEDI)
+  - Multidisciplinary (MULT)
+  - Nursing (NURS)
+  - Veterinary (VETE)
+
+  - Agricultural and Biological Sciences (AGRI)
+  - Biochemistry, Genetics, and Molecular Biology (BIOC)
+  - Immunology and Microbiology (IMMU)
+  - Neuroscience (NEUR)
+  - Pharmacology, Toxicology, and Pharmaceutics (PHAR)
+
+  - Chemical Engineering (CENG)
+  - Chemistry(CHEM)
+  - Computer Science(COMP)
+  - Earth and Planetary Sciences (EART)
+  - Energy(ENER)
+  - Engineering(ENGI)
+  - Environmental Science(ENVI)
+  - Materials Science(MATE)
+  - Mathematics(MATH)
+  - Physics and Astronomy(PHYS)
+
+  - Arts and Humanities(ARTS)
+  - Business, Management, and accounting(BUSI)
+  - Decision Sciences(DECI)
+  - Economics, Econometrics, and Finance(ECON)
+  - Psychology (PSYC)
+  - Social Sciences(SOCI)
